@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function exibirPropriedades(obj) {
+            for (let propriedade in obj) {
+                console.log(propriedade + ": " + obj[propriedade])
+            }
+        }
+
+        const pessoa = {
+            nome: "Kenzo",
+            idade: 17,
+            cidade: "Birigui",
+            email: "heitor.mitsuti@gmail.com"
+        }
+
+        exibirPropriedades(pessoa)
+    </script>
+
+</body>
+</html>
