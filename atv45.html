@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function calcularMediaIdade(listaPessoas) {
+            let somaIdades = 0;
+
+            for (let pessoa of listaPessoas) {
+                somaIdades += pessoa.idade
+            }
+
+            const mediaIdade = somaIdades / listaPessoas.length
+            return mediaIdade
+        }
+
+        const pessoas = [
+            { nome: "Kenzo", idade: 17 },
+            { nome: "Yuki", idade: 16 },
+            { nome: "Henry", idade: 18 }
+        ]
+
+        console.log("Média de idade:", calcularMediaIdade(pessoas))
+    </script>
+
+</body>
+</html>
