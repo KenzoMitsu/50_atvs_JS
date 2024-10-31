@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const array = [18,19,20,22,26,27]
+        const valorBuscado = 30
+        let indice = -1
+
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === valorBuscado) {
+                indice = i
+                break
+            }
+        }
+
+        alert("O índice do valor " + valorBuscado + " é: " + indice)
+    </script>
+
+</body>
+</html>

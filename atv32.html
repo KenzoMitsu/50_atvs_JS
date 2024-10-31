@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const array = [1, 2, 3, 4, 5]
+        const elemento = 3
+        let encontrado = false
+
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === elemento) {
+                encontrado = true
+                break
+            }
+        }
+
+        if (encontrado) {
+            alert("O elemento está presente no array.")
+        } else {
+            alert("O elemento não está presente no array.")
+        }
+    </script>
+
+</body>
+</html>

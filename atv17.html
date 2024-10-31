@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let numero = parseInt(prompt("Digite um número:"))
+
+        let resultado = ""
+
+        if (numero % 3 === 0) {
+            resultado += "O número é múltiplo de 3. "
+        }
+
+        if (numero % 5 === 0) {
+            resultado += "O número é múltiplo de 5."
+        }
+
+        if (resultado === "") {
+            resultado = "O número não é múltiplo de 3 nem de 5."
+        }
+
+        alert(resultado)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let letra = prompt("Digite uma letra:")
+
+        while (letra.length !== 1 || !/[a-zA-Z]/.test(letra)) {
+            alert("Erro: Por favor, insira apenas uma letra.")
+
+            letra = prompt("Digite uma letra:")
+        }
+
+        alert(letra + (["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"].includes(letra) ? " é uma vogal." : " é uma consoante."))
+    </script>
+
+</body>
+</html>
