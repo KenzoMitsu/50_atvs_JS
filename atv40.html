@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function Impar(array) {
+            var contador = 0
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] % 2 !== 0) {
+                    contador++
+                }
+            }
+            return contador
+        }
+
+        var numeros = [60, 37, 28, 52, 70, 29, 7, 90]
+        console.log(Impar(numeros))
+    </script>
+
+</body>
+</html>
